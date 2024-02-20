@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "e74fe2a978d1216c3602b129447c7301573cc2d8",
+        "version" : "5.7.0"
+      }
+    },
+    {
+      "identity" : "srcircleprogress",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Ryu0118/SRCircleProgress",
+      "state" : {
+        "revision" : "37a071b0850a239c4083220a92c23214f210e8aa",
+        "version" : "0.2.1"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgotPassVC" customModule="Online_kurslar" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="ForgotPassView" customModule="Online_kurslar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your registered phone number to reset your password!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tX-0z-Vsx">
+                    <rect key="frame" x="40" y="83" width="313" height="42"/>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                    <color key="textColor" name="gray 1"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tlo-ZY-3rZ">
+                    <rect key="frame" x="24" y="203" width="345" height="48"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="btX-EK-Rse">
+                            <rect key="frame" x="16" y="10" width="313" height="28"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" name="gray 7"/>
+                    <constraints>
+                        <constraint firstItem="btX-EK-Rse" firstAttribute="top" secondItem="tlo-ZY-3rZ" secondAttribute="top" constant="10" id="2sI-01-b4Q"/>
+                        <constraint firstAttribute="trailing" secondItem="btX-EK-Rse" secondAttribute="trailing" constant="16" id="7my-Sg-mHH"/>
+                        <constraint firstAttribute="bottom" secondItem="btX-EK-Rse" secondAttribute="bottom" constant="10" id="OLG-YE-aoR"/>
+                        <constraint firstAttribute="height" constant="48" id="o0k-VF-d2T"/>
+                        <constraint firstItem="btX-EK-Rse" firstAttribute="leading" secondItem="tlo-ZY-3rZ" secondAttribute="leading" constant="16" id="zoC-zu-uoE"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1G1-Sw-vVh">
+                    <rect key="frame" x="24" y="291" width="345" height="48"/>
+                    <color key="backgroundColor" red="0.050980392159999999" green="0.56470588239999997" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="ttF-rO-xlc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Send Code">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="sendCodeBtnTapped:" destination="-1" eventType="touchUpInside" id="wiD-id-adF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tlo-ZY-3rZ" firstAttribute="top" secondItem="5tX-0z-Vsx" secondAttribute="bottom" constant="78" id="3TH-K8-hLY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5tX-0z-Vsx" secondAttribute="trailing" constant="40" id="Hdg-eR-f5Y"/>
+                <constraint firstItem="5tX-0z-Vsx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="J3q-Js-ZHt"/>
+                <constraint firstItem="1G1-Sw-vVh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="L2U-Av-bld"/>
+                <constraint firstItem="5tX-0z-Vsx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="Rdi-vv-96n"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1G1-Sw-vVh" secondAttribute="trailing" constant="24" id="VOk-G0-hDp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tlo-ZY-3rZ" secondAttribute="trailing" constant="24" id="fQn-kQ-5Ps"/>
+                <constraint firstItem="tlo-ZY-3rZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="hJs-A3-A7c"/>
+                <constraint firstItem="1G1-Sw-vVh" firstAttribute="top" secondItem="tlo-ZY-3rZ" secondAttribute="bottom" constant="40" id="hxm-9a-pF0"/>
+            </constraints>
+            <point key="canvasLocation" x="127" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="gray 1">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray 7">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
